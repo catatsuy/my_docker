@@ -4,6 +4,8 @@
 
 [Docker Index](https://index.docker.io/u/catatsuy/)
 
+    sudo ./my-mkimage-debian.sh catatsuy/wheezy wheezy http://ftp.jp.debian.org/debian
+
 
 ## Usage
 
