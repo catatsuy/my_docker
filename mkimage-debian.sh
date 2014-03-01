@@ -1,4 +1,7 @@
 #!/bin/bash
+
+# cf: https://github.com/dotcloud/docker-debian/blob/master/contrib/mkimage-debian.sh
+
 set -e
 
 # these should match the names found at http://www.debian.org/releases/
