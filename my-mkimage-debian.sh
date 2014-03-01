@@ -9,7 +9,7 @@ stableSuite='wheezy'
 testingSuite='jessie'
 unstableSuite='sid'
 
-include='iproute,iputils-ping,sudo,subversion,git,build-essential'
+include='iproute,iputils-ping,sudo,subversion,git,build-essential,openssh-server'
 
 repo="$1"
 suite="${2:-$stableSuite}"
