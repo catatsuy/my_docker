@@ -1,7 +1,4 @@
 #!/bin/bash
-# cf: https://github.com/dotcloud/docker-debian/blob/upstream/contrib/mkimage-debian.sh
-# rm variant
-
 set -e
 
 # these should match the names found at http://www.debian.org/releases/
@@ -9,6 +6,7 @@ stableSuite='wheezy'
 testingSuite='jessie'
 unstableSuite='sid'
 
+variant='minbase'
 include='iproute,iputils-ping'
 
 repo="$1"
@@ -30,7 +28,7 @@ set -x
 
 # bootstrap
 mkdir -p "$target"
-sudo debootstrap --verbose --include="$include" "$suite" "$target" "$mirror"
+sudo debootstrap --verbose --variant="$variant" --include="$include" "$suite" "$target" "$mirror"
 
 cd "$target"
 
